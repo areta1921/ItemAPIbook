@@ -24,5 +24,3 @@ public class ItemController{
         return itemRepository.findAll();
     }
 }
-
-

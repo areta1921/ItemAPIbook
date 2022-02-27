@@ -1,11 +1,9 @@
 package org.generation.ItemsAPI.repository.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.MapKey;
 
 @Entity
 public class Item
@@ -19,10 +17,6 @@ public class Item
     private String description;
 
     private String imageUrl;
-
-    public Item()
-    {
-    }
 
     public Integer getId()
     {
@@ -62,12 +56,5 @@ public class Item
     public void setImageUrl( String imageUrl )
     {
         this.imageUrl = imageUrl;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "Item{" + "id=" + id + ", name='" + name + '\'' + ", description='" + description + '\'' + ", imageUrl='"
-            + imageUrl + '\'' + '}';
     }
 }
